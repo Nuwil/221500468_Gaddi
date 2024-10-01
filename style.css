@@ -20,7 +20,9 @@ body {
 
 }
 
-
+.home-text span {
+    color: red;
+}
 
 .container {
     padding: 10px 10%;
