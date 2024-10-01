@@ -9,10 +9,18 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 #Header {
     width: 100%;
     height: 100vh;
+
 }
+
+
 
 .container {
     padding: 10px 10%;
@@ -26,9 +34,22 @@ html{
 
 .nav-bar ul {
     width: 100%;
+    margin-left: 50px;
 }
 
 .nav-bar ul li {
     display: inline-block;
     margin: 2.5%;
 }
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.home-text {
+    margin-top: 25%;
+}
+
+/* END OF HEADER  */
