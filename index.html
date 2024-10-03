@@ -8,10 +8,10 @@
     <title>Resume Project Instructions</title>
 </head>
 <body>
-    <div id="Header">
+    <div id="header">
         <div class="container">
             <div class="nav-bar">
-                <img src="" alt="Nuwil Logo">
+                <a href="#header"><img src="images/home-logo.png" alt="Nuwil Logo"></a>
                 <ul>
                     <li><a href="#header">Header</a></li>
                     <li><a href="#about">About</a></li>
@@ -28,41 +28,50 @@
 
     <!-- END OF HEADER -->
 
-    <div id="About">
+    <div id="about">
         <div class="container">
-            <div class="about-me">
-                <h1>I am 20 years old was born and raise in Baguio City, i like to play video games and eating.</h1>
-            </div>
-            <div class="about-skills">
-                <h1>My Skills: </h1>
-                <ul>
-                    <li>Cooking</li>
-                    <li>Playing</li>
-                    <li>Basics of Coding</li>
-                    <li>Big Mouth</li>
-                </ul>
-            </div>
-            <div class="about-experience">
-                <h1>My Experience:</h1>
-                <ul>
-                    <li>Catering Worker 2022 - 2023</li>
-                    <li>Part time Construction 2024</li>
-                </ul>
-            </div>
-            <div class="about-education">
-                <h1>My Educational Background:</h1>
-                <ul>
-                    <li>Tertiary</li>
-                    <li>Secondary</li>
-                    <li>Primary</li>
-                </ul>
+            <div class="section">
+                <div class="about-me">
+                    <h1>I am 20 years old was born and raise in Baguio City, i like to play video games and eating.</h1>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Cooking</li>
+                            <li>Playing</li>
+                            <li>Basics of Coding</li>
+                            <li>Big Mouth</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">           
+                        <ul>
+                            <li>Catering Worker 2022 - 2023</li>
+                            <li>Part time Construction 2024</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Tertiary</li>
+                            <li>Secondary</li>
+                            <li>Primary</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 
     <!-- END OF ABOUT -->
 
-    <div id="Porfolio">
+    <div id="porfolio">
         <div class="container">
             <h1>My Work:</h1>
             <div class="work-list">
@@ -93,12 +102,13 @@
 
     <!-- END OF PORTFOLIO -->
 
-    <div id="Contact">
+    <div id="contact">
         <div class="container">
 
         </div>
     </div>
 
     <!-- END OF CONTACT -->
+
 </body>
 </html>
