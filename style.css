@@ -58,6 +58,14 @@ body {
     font-size: 20px;
     position: relative;
     color: rgb(207, 207, 207);
+    transition: color 0.3s ease, opacity 0.3s ease, transform 0.1s ease;
+    opacity: 0.7;
+}
+
+.nav-bar ul li a:hover {
+    opacity: 1;
+    color: white;
+    transform: scale(1.5);
 }
 
 .nav-bar ul li a::after{
