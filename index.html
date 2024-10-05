@@ -1,10 +1,10 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Resume Project Instructions</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
             <div class="nav-bar">
                 <a href="#header"><img src="images/home-logo.png" alt="Nuwil Logo"></a>
                 <ul>
-                    <li><a href="#header">Header</a></li>
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#porfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -38,6 +38,9 @@
                         <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
                         <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
                         <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                        <p class="tab-links" onclick="opentab(event, 'hobbies')">Hobby</p>
+                        <p class="tab-links" onclick="opentab(event, 'body-info')">Body Info</p>
+
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
@@ -53,6 +56,23 @@
                         <ul>
                             <li>Catering Worker 2022 - 2023</li>
                             <li>Part time Construction 2024</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li>Video games</li>
+                            <li>Working out</li>
+                            <li>Stay home lover</li>
+                            <li>Music Enthusiast</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="body-info">
+                        <ul>
+                            <li>Weight: 82kg or 181lbs</li>
+                            <li>Height: 5'6ft or 168cm</li>
+                            <li>Body: Slightly Fit</li>
                         </ul>
                     </div>
 
