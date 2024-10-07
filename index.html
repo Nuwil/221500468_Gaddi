@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Resume Project Instructions</title>
 </head>
 <body>
@@ -15,12 +15,12 @@
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="home-text">
-                <h1>Hi i am <span>Noel</span> J. Gaddi</h1>
+                <h1>Hi I am <span>Noel</span> J. Gaddi</h1>
                 <h2>I am Currently Studying Web Technologies as my main major.</h2>
             </div>
         </div>
@@ -31,59 +31,57 @@
     <div id="about">
         <div class="container">
             <div class="section">
-                <div class="about-me">
-                    <h1>I am 20 years old was born and raise in Baguio City, i like to play video games and eating.</h1>
+                <div class="column-1">
+                    <div class="about-me">
+                        <h1>I am 20 years old, born and raised in Baguio City. I like playing video games and eating.</h1>
                     
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
-                        <p class="tab-links" onclick="opentab(event, 'hobbies')">Hobby</p>
-                        <p class="tab-links" onclick="opentab(event, 'body-info')">Body Info</p>
-
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                            <p class="tab-links" onclick="opentab(event, 'hobbies')">Hobby</p>
+                            <p class="tab-links" onclick="opentab(event, 'body-info')">Body Info</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Cooking</li>
+                                <li>Playing</li>
+                                <li>Basics of Coding</li>
+                                <li>Big Mouth</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>Catering Worker 2022 - 2023</li>
+                                <li>Part-time Construction 2024</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>Tertiary</li>
+                                <li>Secondary</li>
+                                <li>Primary</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="hobbies">
+                            <ul>
+                                <li>Video games</li>
+                                <li>Working out</li>
+                                <li>Stay home lover</li>
+                                <li>Music Enthusiast</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="body-info">
+                            <ul>
+                                <li>Weight: 82kg or 181lbs</li>
+                                <li>Height: 5'6" or 168cm</li>
+                                <li>Body: Slightly Fit</li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>Cooking</li>
-                            <li>Playing</li>
-                            <li>Basics of Coding</li>
-                            <li>Big Mouth</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">           
-                        <ul>
-                            <li>Catering Worker 2022 - 2023</li>
-                            <li>Part time Construction 2024</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="hobbies">
-                        <ul>
-                            <li>Video games</li>
-                            <li>Working out</li>
-                            <li>Stay home lover</li>
-                            <li>Music Enthusiast</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="body-info">
-                        <ul>
-                            <li>Weight: 82kg or 181lbs</li>
-                            <li>Height: 5'6ft or 168cm</li>
-                            <li>Body: Slightly Fit</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>Tertiary</li>
-                            <li>Secondary</li>
-                            <li>Primary</li>
-                        </ul>
-                    </div>
-
+                </div>
+                <div class="column-2">
+                    <img src="images/user.jpg" alt="owner's image">
                 </div>
             </div>
         </div>
@@ -91,7 +89,7 @@
 
     <!-- END OF ABOUT -->
 
-    <div id="porfolio">
+    <div id="portfolio">
         <div class="container">
             <h1>My Work:</h1>
             <div class="work-list">
