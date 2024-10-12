@@ -12,6 +12,7 @@ function opentab(event, tabname) {
 
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
+    // END OF TABLINKS OF ABOUT PAGE
 
     var image = document.querySelector('.column-2 img');
     if (tabname === 'skills') {
@@ -25,4 +26,5 @@ function opentab(event, tabname) {
     } else if (tabname === 'body-info') {
         image.src = 'images/body-info.jpg';
     }
+    // END OF IMAGES IN TABLINKS OF ABOUT PAGE
 }
