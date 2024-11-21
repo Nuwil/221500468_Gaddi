@@ -283,20 +283,18 @@ body {
 }
 
 /* END OF PORTFOLIO  */
-
-.contact-left{
-    flex-basis: 35%;
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.contact-right{
-    flex-basis: 60%;
-}
-
-.contact-left p{
+.column-2 p{
     margin-top: 30px;
 }
 
-.contact-left p i{
+.column-2 p i {
     color: var(--main-color);
     margin-right: 15px;
     font-size: 25px;
@@ -323,10 +321,6 @@ body {
 .btn.btn2{
     display: inline-block;
     background: var(--main-color);
-}
-
-.contact-right form{
-    width: 100%;
 }
 
 form input, form textarea{
@@ -370,6 +364,9 @@ nav .fas{
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url();
+    }
+    #contact {
+        flex-direction: column;
     }
     .header-text{
         margin-top: 100%;
@@ -419,10 +416,19 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
+    .contact-left, .contact-right {
         flex-basis: 100%;
+        margin-bottom: 30px;
     }
     .copyright{
         font-size: 14px;
+    }
+    form .btn2 {
+        width: 100%;
+        padding: 14px 0;
+    }
+    .social-icons a {
+        font-size: 25px;
+        margin-right: 10px;
     }
 }
